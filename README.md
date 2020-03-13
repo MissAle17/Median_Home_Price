@@ -20,23 +20,60 @@ I decded to work on the averages of the median prices, when aggregating everythi
 
 ![Weighted Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/blob/master/images/most%20exp%20w.png)
 
+This dataset is not that surprising. The states that each of these MSAs are located in make sense.
+⋅⋅* 5 in CA
+⋅⋅* 3 in HI
+⋅⋅* 1 in MA (Martha's vineyard)
+⋅⋅* 1 in FL (Jupiter island)
+
+I was surprised that this does not include New York City, but the home prices in the whole MSA are included. The NYC MSA also includes Newark, where home prices are considerably less than Manhattan.
+
+As a former New Yorker, I wanted to see a little more about what the changes of the various MSAs looked like over time.  I added a dist plot for some of the MSAs in New York as well, including NYC.  I wanted to see if the dispersion in home price was different across such an economically diverse state.  
+
+![NYS over time](https://github.com/MissAle17/Median_Home_Price/blob/master/images/NYS%20prices.png)
+
+
+![NYS Displot](https://github.com/MissAle17/Median_Home_Price/blob/master/images/NYS%20dist.png)
+
+
+By way of contrast, I took my current state of residence, CO, and performed the same analysis.
+
+![CO over time](https://github.com/MissAle17/Median_Home_Price/blob/master/images/CO%20prices.png)
+
+
+![CO Displot](https://github.com/MissAle17/Median_Home_Price/blob/master/images/CO%20dist.png)
+
 
 ## Process Summary
 
 __1__ Import necessary libraries; Pandas, Numpy, Matplot, and Searborn
+
 __2__ Load in the data from csv file into Pandas
+
 __3__ Clean the data and explore basic statistics
+
 __4__ Address NAN values
+
 __5__ Calculating averages for median prices
+
 __6__ Collapse data into 10 year Averages by MSA
+
 __7__ Create the first plot of the series by graphing the most expensive MSAs
+
 __8__ Create the second plot by weighting the most expensive MSAs by the size rank
+
 __9__ Return to full, cleaned dataset in order to create subset for viewing NY over time
+
 __10__ Plotting the median home price by MSA over time for NY
+
 __11__ Plotting the distplot of home prices in NY for the 3 most expensive MSAs in NY
+
 __12__ Repeating the NY process with another state, CO
+
 __13__ Return again to full, cleaned sataset to plot the average prices by state over time
+
 __14__ Explaining next steps
+
 __15__ Process summary
 
 
