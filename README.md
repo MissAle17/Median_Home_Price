@@ -15,8 +15,10 @@ The data was downloaded from [Zillow Research](https://www.zillow.com/research/d
 So when working with a relatively simple ask, like looking at trends in Home Prices, the approach to cleaning and reviewing the data is the major decision of the project.  In this case, the data was realatively clean, but there were a number of null values that needed to be dealt with.  In the case of NANs in the MSA column, I made a bold decision.  I removed those lines from my dataframe completely resulting in a loss of 22.6% of the data.  This was a conscious decision I made with my background knowledge of real estate.  There exists in the US a large amount of unincorporated land.  This includes everything from small plots in central Florida that are between farms to large swaths in the mid-west that are either part of parks or generally empty fields.  Thought the data loss was large, I was confortable given the ask, home prices in MSAs as these NANs likely weren't part of one.  One thought for future work would be to add these back in to see what affect they have on the prices.
 
 I decded to work on the averages of the median prices, when aggregating everything togeter.  It's a little confusing to talk about the mean meadian home prices, however I still think it's the right choice. My first two visuals show the 10 most expensive MSAs, on average, over the last 10 years.  The first is a simple plot showing each MSA, the second is weighted by SizeRank changing the size of the plot point.
-![Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/tree/master/images/most%20exp.png "Most Expensive MSAs")
-![Weighted Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/tree/master/images/most%20exp%20w.png "Weighted Most Expensive MSAs")
+
+![Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/tree/master/images/most%20exp.png )
+
+![Weighted Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/tree/master/images/most%20exp%20w.png)
 
 
 ## Process Summary
