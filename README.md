@@ -16,9 +16,9 @@ So when working with a relatively simple ask, like looking at trends in Home Pri
 
 I decded to work on the averages of the median prices, when aggregating everything togeter.  It's a little confusing to talk about the mean meadian home prices, however I still think it's the right choice. My first two visuals show the 10 most expensive MSAs, on average, over the last 10 years.  The first is a simple plot showing each MSA, the second is weighted by SizeRank changing the size of the plot point.
 
-![Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/tree/master/images/most%20exp.png )
+![Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/blob/master/images/most%20exp.png)
 
-![Weighted Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/tree/master/images/most%20exp%20w.png)
+![Weighted Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/blob/master/images/most%20exp%20w.png)
 
 
 ## Process Summary
