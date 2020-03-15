@@ -35,6 +35,9 @@ As a former New Yorker, I wanted to see a little more about what the changes of 
 
 ![NYS Displot](https://github.com/MissAle17/Median_Home_Price/blob/master/images/NYS%20dist.png)
 
+Apparently, New York city is really expensive.  In both plots you can see that the prices of homes in NYC are much higher than some of the other larger MSAs in New York State.  
+
+What about another state?  Are larger citites more spread out than the more secondary msa's in the state?
 
 By way of contrast, I took my current state of residence, CO, and performed the same analysis.
 
@@ -42,6 +45,23 @@ By way of contrast, I took my current state of residence, CO, and performed the 
 
 
 ![CO Displot](https://github.com/MissAle17/Median_Home_Price/blob/master/images/CO%20dist.png)
+
+
+CO is very different in NY in this case.  It does look like the Denver MSA is a more spread out than the other MSA's in CO, however, New York City is likely an outlier, since it is one of the biggest cities (and tehrefore metropolitan areas) in the world.
+
+
+Dissecting the information in these plots, one must remember what you are looking at.  These plots are average home prices by metropolitan area over time.  So with the distplots, we're looking at the dispersion of the mean for each msa by month over roughly ten years.
+
+
+What about state by state averages side by side?  The begining of the data set is very near to the financial crisis, but included in the time frame is the 'recovery'.  Roughly five years after the crisis the real estate markets recovered and in some places boomed.
+
+![States over time](https://github.com/MissAle17/Median_Home_Price/blob/master/images/states%20prices.png)
+
+Take careful note of the y axes - they've been calibrated to be the same. The top plot includes CA (That includes the San Jose MSA which is not only one of the highest median home prices but also one of the fastest growing). You can see the jump in CA toward the end of 2012. The same time frame saw a jump in median home prices in many states, this is roughly 5 years after the Financial Crisis and accepted as the period of recover.
+
+## If I Had More Time..
+
+I would take income data as well and contrast the Area Median Income (AMI) with the Average Median Home Price to determine the true 'expensiveness' of a metro politan area. Unfortunately the AMI data is difficult to find when you are not an institution subscribing to expensive dta sources. To move forward, either city by city income data or per capita (instead of household) data could be used to approximate AMI. Additionally, I could reassess the data and include the NANs in the state by state analysis as they are part of the state though not necessarily part of an MSA
 
 
 ## Process Summary
