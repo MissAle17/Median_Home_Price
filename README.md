@@ -3,7 +3,7 @@ Visualizations to describe the median home prices by metro area in the US.
 
 ## The Data
 
-Home prices have been a hot-button issue in terms of the greater health of the US economy for several decades.  Following median home prices, home builds, home purchases, home loan interest rates, is talked about reguarly by all sorts of market analysts.  
+Home prices have been a hot-button issue in terms of the greater health of the US economy for several decades.  Following median home prices, home builds, home purchases, home loan interest rates, is talked about regularly by all sorts of market analysts.  
 
 Rises prices of construction, in labor an materials, are chasing more and more people out of participating in this market.  With the wealth of data available we can do our own analysis and see where the most affordable US metropolitan areas are, should one be interested in lowering costs.  The project here was created to participate on [Kaggle](https://www.kaggle.com/paultimothymooney/zillow-house-price-data).
 
@@ -12,9 +12,9 @@ The data was downloaded from [Zillow Research](https://www.zillow.com/research/d
 
 ## The Approach
 
-So when working with a relatively simple ask, like looking at trends in Home Prices, the approach to cleaning and reviewing the data is the major decision of the project.  In this case, the data was realatively clean, but there were a number of null values that needed to be dealt with.  In the case of NANs in the MSA column, I made a bold decision.  I removed those lines from my dataframe completely resulting in a loss of 22.6% of the data.  This was a conscious decision I made with my background knowledge of real estate.  There exists in the US a large amount of unincorporated land.  This includes everything from small plots in central Florida that are between farms to large swaths in the mid-west that are either part of parks or generally empty fields.  Thought the data loss was large, I was confortable given the ask, home prices in MSAs as these NANs likely weren't part of one.  One thought for future work would be to add these back in to see what affect they have on the prices.
+So when working with a relatively simple ask, like looking at trends in Home Prices, the approach to cleaning and reviewing the data is the major decision of the project. In this case, the data was relatively clean, but there were a number of null values that needed to be dealt with. In the case of NANs in the MSA column, I made a bold decision. I removed those lines from my dataframe completely resulting in a loss of 22.6% of the data. This was a conscious decision I made with my background knowledge of real estate. There exists in the US a large amount of unincorporated land. This includes everything from small plots in central Florida that are between farms to large swaths in the mid-west that are either part of parks or generally empty fields. Thought the data loss was large, I was comfortable given the ask, home prices in MSAs as these NANs likely weren't part of one. One thought for future work would be to add these back in to see what affect they have on the prices.
 
-I decded to work on the averages of the median prices, when aggregating everything togeter.  It's a little confusing to talk about the mean meadian home prices, however I still think it's the right choice. My first two visuals show the 10 most expensive MSAs, on average, over the last 10 years.  The first is a simple plot showing each MSA, the second is weighted by SizeRank changing the size of the plot point.
+I decided to work on the averages of the median prices, when aggregating everything together. It's a little confusing to talk about the mean median home prices, however I still think it's the right choice. My first two visuals show the 10 most expensive MSAs, on average, over the last 10 years. The first is a simple plot showing each MSA, the second is weighted by SizeRank changing the size of the plot point.
 
 ![Most Expensive MSAs](https://github.com/MissAle17/Median_Home_Price/blob/master/images/most%20exp.png)
 
@@ -47,13 +47,11 @@ By way of contrast, I took my current state of residence, CO, and performed the 
 ![CO Displot](https://github.com/MissAle17/Median_Home_Price/blob/master/images/CO%20dist.png)
 
 
-CO is very different in NY in this case.  It does look like the Denver MSA is a more spread out than the other MSA's in CO, however, New York City is likely an outlier, since it is one of the biggest cities (and tehrefore metropolitan areas) in the world.
+CO is very different in NY in this case. It does look like the Denver MSA is a more spread out than the other MSA's in CO, however, New York City is likely an outlier, since it is one of the biggest cities (and therefore metropolitan areas) in the world.
 
+Dissecting the information in these plots, one must remember what you are looking at. These plots are average home prices by metropolitan area over time. So with the distplots, we're looking at the dispersion of the mean for each MSA by month over roughly ten years.
 
-Dissecting the information in these plots, one must remember what you are looking at.  These plots are average home prices by metropolitan area over time.  So with the distplots, we're looking at the dispersion of the mean for each msa by month over roughly ten years.
-
-
-What about state by state averages side by side?  The begining of the data set is very near to the financial crisis, but included in the time frame is the 'recovery'.  Roughly five years after the crisis the real estate markets recovered and in some places boomed.
+What about state by state averages side by side? The beginning of the data set is very near to the financial crisis, but included in the time frame is the 'recovery'. Roughly five years after the crisis the real estate markets recovered and in some places boomed.
 
 ![States over time](https://github.com/MissAle17/Median_Home_Price/blob/master/images/states%20prices.png)
 
